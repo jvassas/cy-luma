@@ -1,25 +1,22 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add(
+  "addItemToCartWithOptions",
+  (color = "Blue", size = "M") => {
+    // Click the first product
+    cy.get(".product-item").first().click();
+
+    // Select color
+    cy.get(`.swatch-option.color[aria-label="${color}"]`).click();
+
+    // Select size
+    cy.get(`.swatch-option.text[aria-label="${size}"]`).click();
+
+    // Click Add to Cart
+    cy.get("#product-addtocart-button").click();
+
+    // Confirm it was added
+    cy.get(".message-success", { timeout: 5000 }).should(
+      "contain",
+      "You added"
+    );
+  }
+);

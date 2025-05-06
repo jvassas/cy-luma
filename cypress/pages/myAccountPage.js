@@ -8,6 +8,14 @@ class MyAccountPage {
       .should("be.visible")
       .and("contain", "Thank you for registering with Main Website Store.");
   }
+
+  getAccountInfoBox() {
+    return cy.get(".box-content");
+  }
+
+  assertAccountInfo(name, email) {
+    this.getAccountInfoBox().should("contain", name).and("contain", email);
+  }
 }
 
 export default new MyAccountPage();

@@ -1,0 +1,26 @@
+{
+  "firstNames": [
+    "Ava", "Liam", "Olivia", "Noah", "Emma", "Oliver", "Charlotte", "Elijah", "Amelia", "James",
+    "Sophia", "William", "Isabella", "Benjamin", "Mia", "Lucas", "Harper", "Henry", "Evelyn", "Alexander",
+    "Abigail", "Michael", "Ella", "Ethan", "Elizabeth", "Daniel", "Camila", "Matthew", "Luna", "Jackson",
+    "Sofia", "Sebastian", "Avery", "Jack", "Mila", "Owen", "Aria", "Samuel", "Scarlett", "Jacob",
+    "Penelope", "Asher", "Layla", "Carter", "Chloe", "Leo", "Victoria", "Grayson", "Madison", "Jayden",
+    "Eleanor", "Gabriel", "Hazel", "Julian", "Nora", "Mateo", "Riley", "Anthony", "Zoey", "Isaac",
+    "Hannah", "Lincoln", "Lily", "Joshua", "Ellie", "Christopher", "Stella", "Andrew", "Addison", "Theodore",
+    "Willow", "Caleb", "Lucy", "Ryan", "Paisley", "Nathan", "Natalie", "Thomas", "Nova", "Christian",
+    "Elena", "Hunter", "Violet", "Landon", "Claire", "Jonathan", "Aurora", "Isaiah", "Skylar", "Charles",
+    "Savannah", "Aaron", "Leah", "Eli", "Audrey", "Connor", "Brooklyn", "Jeremiah", "Bella", "Adrian"
+  ],
+  "lastNames": [
+    "Smith", "Johnson", "Williams", "Brown", "Jones", "Garcia", "Miller", "Davis", "Rodriguez", "Martinez",
+    "Hernandez", "Lopez", "Gonzalez", "Wilson", "Anderson", "Thomas", "Taylor", "Moore", "Jackson", "Martin",
+    "Lee", "Perez", "Thompson", "White", "Harris", "Sanchez", "Clark", "Ramirez", "Lewis", "Robinson",
+    "Walker", "Young", "Allen", "King", "Wright", "Scott", "Torres", "Nguyen", "Hill", "Flores",
+    "Green", "Adams", "Nelson", "Baker", "Hall", "Rivera", "Campbell", "Mitchell", "Carter", "Roberts",
+    "Gomez", "Phillips", "Evans", "Turner", "Diaz", "Parker", "Cruz", "Edwards", "Collins", "Reyes",
+    "Stewart", "Morris", "Morales", "Murphy", "Cook", "Rogers", "Gutierrez", "Ortiz", "Morgan", "Cooper",
+    "Peterson", "Bailey", "Reed", "Kelly", "Howard", "Ramos", "Kim", "Cox", "Ward", "Richardson",
+    "Watson", "Brooks", "Chavez", "Wood", "James", "Bennett", "Gray", "Mendoza", "Ruiz", "Hughes",
+    "Price", "Alvarez", "Castillo", "Sanders", "Patel", "Myers", "Long", "Ross", "Foster", "Jimenez"
+  ]
+}
