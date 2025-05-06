@@ -11,7 +11,6 @@ describe("Create Account tests", () => {
   it("Should allow a user to create an account", () => {
     topNav.clickCreateAccount();
     const timestamp = Date.now();
-    // If time permits, randomly create user with names.json file
     const firstName = "Jacob";
     const lastName = "Test";
     const fullName = `${firstName} ${lastName}`;
@@ -23,7 +22,6 @@ describe("Create Account tests", () => {
     createAccountPage.fillPassword(pw);
     createAccountPage.fillConfirmPassword(pw);
     createAccountPage.clickCreateAccountBtn();
-    //ADD ASSERTION FOR API CALL BEING SUCCESSFUL
     cy.url().should("include", "customer/account/");
     myAccountPage.assertSuccessMessage();
     myAccountPage.assertAccountInfo(fullName, email);
@@ -59,8 +57,6 @@ describe("Create Account tests", () => {
 
   it("Should throw an error message when email is missing", () => {
     topNav.clickCreateAccount();
-    const timestamp = Date.now();
-    // If time permits, randomly create user with names.json file
     const firstName = "Jacob";
     const lastName = "Test";
     const pw = "Password123$5!";
@@ -75,7 +71,6 @@ describe("Create Account tests", () => {
   it("Should throw an error message when password is missing", () => {
     topNav.clickCreateAccount();
     const timestamp = Date.now();
-    // If time permits, randomly create user with names.json file
     const firstName = "Jacob";
     const lastName = "Test";
     const email = `jacobTest${timestamp}@test.com`;
@@ -91,7 +86,6 @@ describe("Create Account tests", () => {
   it("Should throw an error message when confirm password is missing", () => {
     topNav.clickCreateAccount();
     const timestamp = Date.now();
-    // If time permits, randomly create user with names.json file
     const firstName = "Jacob";
     const lastName = "Test";
     const email = `jacobTest${timestamp}@test.com`;
@@ -107,7 +101,6 @@ describe("Create Account tests", () => {
   it("Should throw an error message when password does not meet the length requirements", () => {
     topNav.clickCreateAccount();
     const timestamp = Date.now();
-    // If time permits, randomly create user with names.json file
     const firstName = "Jacob";
     const lastName = "Test";
     const email = `jacobTest${timestamp}@test.com`;
@@ -123,7 +116,6 @@ describe("Create Account tests", () => {
   it("Should throw an error message when password does not meet the requirements", () => {
     topNav.clickCreateAccount();
     const timestamp = Date.now();
-    // If time permits, randomly create user with names.json file
     const firstName = "Jacob";
     const lastName = "Test";
     const email = `jacobTest${timestamp}@test.com`;
@@ -139,7 +131,6 @@ describe("Create Account tests", () => {
   it("Should throw an error message when password and confirm password does not match", () => {
     topNav.clickCreateAccount();
     const timestamp = Date.now();
-    // If time permits, randomly create user with names.json file
     const firstName = "Jacob";
     const lastName = "Test";
     const email = `jacobTest${timestamp}@test.com`;
@@ -156,8 +147,6 @@ describe("Create Account tests", () => {
 
   it("Should throw an error message when the email already exists in the system", () => {
     topNav.clickCreateAccount();
-    const timestamp = Date.now();
-    // If time permits, randomly create user with names.json file
     const firstName = "Jacob";
     const lastName = "Test";
     const email = "test@email.com";

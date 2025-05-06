@@ -11,9 +11,6 @@ describe("Shipping page tests", () => {
     actionBanner.clickCartBtn();
     actionBanner.clickViewEditCartLink();
     actionBanner.clickProceedToCheckout();
-    // cy.get('form[data-role="opc-shipping-form"]', { timeout: 10000 }).should(
-    //   "be.visible"
-    // );
   });
 
   it("Should prompt a login when an email address is recognized by the system", function () {
