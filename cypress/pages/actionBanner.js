@@ -1,18 +1,19 @@
 const cartIcon_Class = ".showcart";
 const viewEditCartLink_Text = "View and Edit Cart";
-const proceedToCheckoutBtn_Text = "Proceed to Checkout";
 
 class ActionBanner {
   clickCartBtn() {
-    cy.get(cartIcon_Class).click();
+    cy.get(cartIcon_Class).should("be.visible").click();
   }
 
   clickViewEditCartLink() {
-    cy.contains(viewEditCartLink_Text).click();
+    cy.contains(viewEditCartLink_Text).should("be.visible").click();
   }
 
-  clickProceedToCheckoutBtn() {
-    cy.contains(proceedToCheckoutBtn_Text).click();
+  clickProceedToCheckout() {
+    cy.get('button[data-role="proceed-to-checkout"]')
+      .should("be.visible")
+      .click();
   }
 }
 
